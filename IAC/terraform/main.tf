@@ -7,9 +7,12 @@ terraform {
       version = "~> 5.0"
     }
   }
+
+  backend "s3" {}
+
 }
 
 provider "aws" {
-  region = var.aws_region 
-  profile = "sunny" #My Aws credential profile, replace it with your AWS credential
+  region  = var.aws_region
+  profile = "sunny"   # Replace with your AWS CLI profile
 }
