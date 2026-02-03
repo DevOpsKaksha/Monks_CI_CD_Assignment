@@ -2,7 +2,7 @@ from flask import Flask
 app=Flask(__name__)
 @app.route("/")
 def home():
-    Welcome_msg="Hello <br> Welcome to My Web Application"
+    Welcome_msg="Hello <br> Welcome to Monks.com"
     return Welcome_msg
 
 if __name__ == "__main__":
